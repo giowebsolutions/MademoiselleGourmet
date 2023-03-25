@@ -14,7 +14,7 @@ const bolos = [
     {
         name: "Bolo de Chocolate",
         price: "18,00",
-        description: "Brownie de chocolate com recheio de ganache e nozes",
+        description: "Massa de Chocolate com recheio de chocolate",
         image: imgBoloSimples,
         alt: "",
     },
