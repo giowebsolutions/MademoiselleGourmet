@@ -1,0 +1,30 @@
+@import 'variables';
+
+
+.promo{
+    background-color: #FFA7F1;
+    color: #fff;
+    padding: 5px 20px;
+    width: fit-content;
+    font-size: 14px;
+    border-radius: 50px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+
+
+
+    &:hover{
+        background-color: lighten(#FFA7F1, 3%);
+    }
+
+    @include lg{
+        border-radius: 20px;
+    }
+
+    SPAN{
+        font-weight: 800;
+        display: inline;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,81 @@
+@import 'variables';
+
+.mainNav{
+    padding: 2rem;
+
+    @include lg{
+        padding: 0;
+
+        margin-bottom: 2rem;
+    }
+
+    A{
+        font-family: 'Lobster Two';
+    }
+    
+    .logo{
+        width: 120px;
+    }
+    
+    H1{
+        font-weight: bold;
+    }
+
+    UL{
+        gap: 30px;
+    }
+
+    .cta{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        .toggleBtn{
+            display: none;
+
+            @include lg{
+                display: block;
+                font-size: 25px;
+            }
+        }
+
+
+        .menu{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+            @include lg{
+                display: none;
+            }
+        }
+
+        .menuResponsive{
+            position: fixed;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            left: 0;
+            padding: 2rem;
+            background: #ffe0fc;
+
+            .closeBtn{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 20px;
+                font-weight: 800;
+                color: #106ff4;
+            }
+
+        }
+    }
+    
+    .btnPrimary{
+        background-color: $secondary-color !important;
+        border: none;
+        border-radius: 50px;
+        color: #000;
+    }
+}

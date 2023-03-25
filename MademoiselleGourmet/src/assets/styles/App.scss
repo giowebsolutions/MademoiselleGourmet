@@ -1,0 +1,42 @@
+@import 'variables';
+*{
+  font-family: 'Manrope';
+}
+
+H1, H2, H3, H4, H5, H6{
+  font-family: 'Lobster Two';
+  font-weight: bold;
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+
+UL{
+  margin: 0;
+  padding: 0;
+}
+
+UL LI {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+BODY{
+  background-image: url('../../images/bg.png');
+}
+
+A{
+  text-decoration: none;
+  color: rgb(33,37,41);
+}

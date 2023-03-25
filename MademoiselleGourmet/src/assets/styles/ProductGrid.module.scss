@@ -1,0 +1,14 @@
+@import  'variables';
+
+.productsGrid{
+    padding: 2rem;
+    flex-wrap: wrap;
+
+    @include lg{
+        padding: 0;
+    }
+
+    H1{
+        text-align: left !important;
+    }
+}
