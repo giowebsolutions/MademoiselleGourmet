@@ -1,19 +1,12 @@
 import '../src/assets/styles/App.scss'
 import 'normalize.css';
-import Header from './template/Header';
-import Card from './components/Card';
-import Home from './pages/Home';
-import Footer from './template/Footer';
-
+import AppRoutes from './routes'
 
 function App() {
 
-
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <Footer />
+      <AppRoutes />
     </div>
   )
 }

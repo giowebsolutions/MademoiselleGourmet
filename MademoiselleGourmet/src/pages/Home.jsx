@@ -1,6 +1,7 @@
 import { useState, React } from 'react'
 import styles from '../assets/styles/Home.module.scss';
 import ProductGrid from '../components/ProductGrid';
+import Header from './../template/Header';
 
 export default function Home() {
 
@@ -12,20 +13,23 @@ export default function Home() {
     const [promoActive, showPromoActive] = useState(true);
 
     return (
-        <main>
-            {
-                (promoActive == true) ?
+        <>
+            <Header />
+            <main>
+                {
+                    (promoActive == true) ?
 
-                    <p className={styles.promo} onClick={() => showPromoActive(false)}>
-                        <span>PROMOÇÃO</span>{promocao.text} <span>{promocao.minValue}*</span>
-                    </p>
+                        <p className={styles.promo} onClick={() => showPromoActive(false)}>
+                            <span>PROMOÇÃO</span>{promocao.text} <span>{promocao.minValue}*</span>
+                        </p>
 
-                    : ''
-            }
+                        : ''
+                }
 
 
 
-            <ProductGrid />
-        </main>
+                <ProductGrid />
+            </main>
+        </>
     )
 }

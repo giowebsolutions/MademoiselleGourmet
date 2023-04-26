@@ -40,3 +40,19 @@ A{
   text-decoration: none;
   color: rgb(33,37,41);
 }
+
+.btn-primary{
+    background-color: $secondary-color;
+    padding: 10px 15px;
+    text-align: center;
+    font-family: 'Lobster Two';
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    width: fit-content;
+
+    &:hover{
+        background-color: lighten($secondary-color, 10%);
+    }
+}

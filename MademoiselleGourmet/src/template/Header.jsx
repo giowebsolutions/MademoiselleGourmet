@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import styles from '../assets/styles/Header.module.scss';
 
 // Mademoiselle Logo
@@ -22,7 +23,7 @@ export default function Header() {
         <header className={styles.mainNav}>
             <div className="d-flex justify-content-between">
                 <div className="d-flex align-items-center gap-3">
-                    <img src={logo} className={styles.logo} alt="Logo" />
+                    <Link to="/"><img src={logo} className={styles.logo} alt="Logo" /></Link>
                     <h1>Menu</h1>
                 </div>
 
